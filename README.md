@@ -7,7 +7,7 @@ ec2 access
 ```hcl
 module "create_profile" {
   source        = "devoptimist/ec2-allow-iam/aws"
-  version       = "0.0.5"
+  version       = "0.0.6"
   policy_name   = "test_policy"
   create_policy = true
 }

@@ -97,8 +97,8 @@ resource "aws_iam_instance_profile" "ec2_allow" {
   count = "${var.create_policy}"
   name = "${var.policy_name}"
   role = "${aws_iam_role.ec2_allow.name}"
-}
 
-provisioner "local-exec" {
-  command = "sleep 30"
+  provisioner "local-exec" {
+    command = "sleep 30"
+  }
 }
