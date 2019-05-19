@@ -21,7 +21,7 @@ EOF
 
 resource "aws_iam_role_policy" "ec2_allow" {
   name = "${var.policy_name}"
-  role = "${aws_iam_role.ec2_role.id}"
+  role = "${aws_iam_role.ec2_allow.id}"
   count = "${var.create_policy}"
 
   policy = <<EOF
